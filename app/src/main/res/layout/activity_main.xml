@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_selected_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/muli_bold"
+        android:text="Chinese"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/et_add_food"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_selected_food"
+        app:srcCompat="@mipmap/ic_logo" />
+
+    <Button
+        android:id="@+id/btn_decide"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="DECIDE!"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_food"
+        android:layout_marginBottom="8dp"
+        tools:layout_editor_absoluteY="546dp" />
+
+    <EditText
+        android:id="@+id/et_add_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tambahkan Makanan"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/muli_bold"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_selected_food"
+        app:layout_constraintBottom_toTopOf="@id/btn_add_food"
+        tools:layout_editor_absoluteY="327dp" />
+
+    <Button
+        android:id="@+id/btn_add_food"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="70dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/muli_bold"
+        android:text="ADD FOOD"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/btn_decide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_food" />
+
+</android.support.constraint.ConstraintLayout>
